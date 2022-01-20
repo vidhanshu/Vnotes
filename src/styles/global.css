@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Dosis:wght@300;400;500;700&display=swap');
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+    --text-color: rgb(70, 70, 70);
+    --hover-color: rgb(235, 235, 235);
+    --ten-padding: 10px;
+    --sixteen-padding: 16px;
+    --transition: .3s All;
+    --primary: #4285F4;
+    --dark-primary: #3170d6;
+    --logo-sz: 30px;
+    --icon-sz: 20px;
+    --google-shadow-layer: 0 0 1px rgba(0, 0, 0);
+    --google-shadow-layer-focus: 0 0 1.5px rgba(0, 0, 0);
+    --global-padding: 20px 16px;
+    --input-padding: 20px 16px;
+    --global-padding-wtop: 20px 50px;
+    /*global padding with top padding*/
+    --border-radius: 2px;
+}
+
+@media screen and (min-width:700px) {
+     :root {
+        --sixteen-padding: 30px 50px;
+        --global-padding: 0px 50px;
+    }
+}
+
+body {
+    position: relative;
+}
+
+.main-container {
+    min-height: 100vh;
+}
+
+.notes {
+    margin: 90px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width:700px) {
+    .notes {
+        padding: var(--global-padding);
+    }
+}

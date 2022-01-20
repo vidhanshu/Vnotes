@@ -1,0 +1,69 @@
+.note {
+    box-shadow: var(--google-shadow-layer);
+    border-radius: var(--border-radius);
+    width: 90vw;
+    max-width: 400px;
+    padding: 15px;
+    min-height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.note h1,
+.note p {
+    box-shadow: var(--google-shadow-layer);
+    padding: var(--ten-padding);
+}
+
+.note h1 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.note p {
+    margin-top: 20px;
+    word-wrap: break-word;
+}
+
+.note span {
+    color: rgb(124, 124, 124);
+    font-size: 15px;
+}
+
+img {
+    filter: invert(30deg);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.btn img {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--border-radius);
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.btn img:hover {
+    background-color: var(--hover-color);
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0px 0px 10px 0px;
+}
+
+.sidebar {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

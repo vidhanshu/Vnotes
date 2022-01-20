@@ -1,0 +1,84 @@
+    .note {
+        padding: var(--ten-padding);
+        box-shadow: var(--google-shadow-layer);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 30px auto;
+        border-radius: var(--border-radius);
+        width: 90vw;
+        max-width: 500px;
+    }
+    
+    .note .color {
+        border-radius: 50%;
+        height: 30px;
+        width: 45px;
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+        cursor: pointer;
+    }
+    
+    .note .color::-webkit-color-swatch {
+        border: none;
+        border-radius: 60%;
+    }
+    
+    .note .color:focus {
+        outline: none;
+        background-color: var(--hover-color);
+    }
+    
+    .note h2 {
+        text-align: center;
+    }
+    
+    .note input,
+    button,
+    textarea {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: var(--border-radius);
+        border: none;
+    }
+    
+    .note input,
+    textarea {
+        padding: var(--input-padding);
+    }
+    
+    .note textarea {
+        height: 80px;
+        max-width: 100%;
+        min-width: 100%;
+        box-shadow: var(--google-shadow-layer);
+    }
+    
+    .note textarea:focus {
+        outline: 1.5px solid rgb(65, 65, 65);
+    }
+    
+    .note input:focus {
+        outline: 1.5px solid rgb(65, 65, 65);
+    }
+    
+    .note button {
+        color: white;
+        cursor: pointer;
+        background-color: var(--primary);
+        height: 40px;
+    }
+    
+    .note button:hover {
+        background-color: var(--dark-primary);
+    }
+    
+    .note input {
+        box-shadow: var(--google-shadow-layer);
+        min-height: 50px;
+    }
