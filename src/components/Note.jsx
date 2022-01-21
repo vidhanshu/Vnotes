@@ -2,14 +2,12 @@ import React from 'react'
 import deleteIcon from '../images/delete.svg'
 import done from '../images/done.svg'
 import gdone from '../images/gdone.png'
-import edit from '../images/write.png'
 import notesStyles from '../styles/Note.module.css'
 import { complete } from './Audio'
 function Note(props) {
     let { title, time, content, index, color } = props;
-    const [Time, setTime] = React.useState((new Date).toLocaleString());
+    const [Time, setTime] = React.useState(new Date().toLocaleString());
     const Done = React.useRef();
-    const Edit = React.useRef();
 
 
     function deleteTheNode(idx) {
@@ -37,8 +35,8 @@ function Note(props) {
                 <span>{Time}</span>
                 <p>{content}</p>
                 <div className={notesStyles.btn}>
-                    <img onClick={() => deleteTheNode(index)} src={deleteIcon} />
-                    <img src={done} ref={Done} onClick={hogaya} />
+                    <img onClick={() => deleteTheNode(index)} src={deleteIcon} alt="delete icon" />
+                    <img src={done} ref={Done} alt="done icon" onClick={hogaya} />
                 </div>
             </div>
         </>

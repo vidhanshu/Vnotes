@@ -6,7 +6,7 @@ function Header() {
     const nav_bar = useRef();
     const nav = useRef();
     const clicked = () => {
-        if (nav.current.style.width != '0%') {
+        if (nav.current.style.width !== '0%') {
             nav.current.style.width = "0%";
         }
         else {
