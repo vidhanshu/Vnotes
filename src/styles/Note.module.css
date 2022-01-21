@@ -1,10 +1,7 @@
 .note {
     box-shadow: var(--google-shadow-layer);
     border-radius: var(--border-radius);
-    width: 90vw;
-    max-width: 400px;
     padding: 15px;
-    min-height: 150px;
     position: relative;
     overflow: hidden;
 }
